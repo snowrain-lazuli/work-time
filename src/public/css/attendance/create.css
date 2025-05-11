@@ -1,0 +1,140 @@
+.attendance-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+}
+
+.attendance-panel__status-label {
+    font-size: 18px;
+    background-color: #C8C8C8;
+    color: #696969;
+    padding: 8px 16px;
+    border-radius: 999px;
+    display: inline-block;
+}
+
+.attendance-panel__date-display {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attendance-date {
+    font-size: 40px;
+}
+
+.attendance-time {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.attendance-panel__action-buttons {
+    font-size: 32px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.attendance-button {
+    padding: 10px 40px;
+    border-radius: 999px;
+    font-size: 32px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    min-width: 300px;
+    text-align: center;
+}
+
+.btn-start,
+.btn-end {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-break-start,
+.btn-break-end {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.attendance-panel__leaving-comment {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* --- Responsive styles --- */
+@media (max-width: 768px) {
+    .attendance-date {
+        font-size: 28px;
+    }
+
+    .attendance-time {
+        font-size: 48px;
+    }
+
+    .attendance-button {
+        font-size: 20px;
+        padding: 10px 20px;
+        min-width: 200px;
+    }
+
+    .attendance-panel__action-buttons {
+        font-size: 24px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .attendance-panel__leaving-comment {
+        font-size: 24px;
+    }
+
+    .attendance-panel__status-label {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .attendance-panel {
+        top: 0;
+        left: 0;
+        transform: none;
+        position: static;
+        padding: 40px 20px;
+    }
+
+    .attendance-time {
+        font-size: 36px;
+    }
+
+    .attendance-button {
+        font-size: 18px;
+        min-width: 100%;
+    }
+
+    .attendance-date {
+        font-size: 24px;
+    }
+
+    .attendance-panel__status-label {
+        font-size: 14px;
+    }
+}

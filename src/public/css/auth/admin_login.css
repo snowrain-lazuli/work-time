@@ -1,0 +1,86 @@
+.content {
+    background-color: #FFF;
+}
+
+.admin-login-form,
+.admin-login-form * {
+    font-family: 'Inter', sans-serif;
+}
+
+.admin-login-form__inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.admin-login-form__form {
+    padding: 64px 96px;
+    width: 40vw;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.admin-login-form__btn {
+    width: 100%;
+    margin: 60px auto 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .admin-login-form__form {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .admin-login-form__form {
+        width: 80vw;
+        padding: 40px;
+    }
+
+    .admin-login-form__inner {
+        flex-direction: column;
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .admin-login-form__form {
+        width: 90vw;
+        padding: 24px;
+    }
+}
+
+.admin-login-form__group {
+    margin-top: 32px;
+}
+
+.admin-login-form__group:first-of-type {
+    margin-top: 0;
+}
+
+.admin-login-form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.admin-login-form__input {
+    display: block;
+    padding: 8px 12px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.admin-login-form__error-message {
+    color: #FF9494;
+}
+
+.admin-login-form__link {
+    margin: 10px auto;
+    text-align: center;
+}

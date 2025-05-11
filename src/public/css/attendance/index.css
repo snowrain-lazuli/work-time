@@ -1,0 +1,112 @@
+.attendance-container {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.attendance-wrapper {
+    width: 100%;
+    max-width: 960px;
+}
+
+.index-title p {
+    font-weight: bold;
+    font-size: 24px;
+    border-left: 8px solid #000;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.date-navigation {
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.date-navigation .previous-month button,
+.date-navigation .next-month button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #737373;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    width: 20;
+    height: 15px;
+    margin-right: 6px;
+    opacity: 0.3;
+}
+
+.next-arrow {
+    transform: rotate(180deg);
+}
+
+.date-navigation .month-center-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    gap: 10px;
+}
+
+.calendar-wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.calendar-label {
+    cursor: pointer;
+}
+
+.calendar-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+#admin-date-picker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.current-month-display {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    white-space: nowrap;
+}
+
+.work-list-table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+    text-align: center;
+    color: #737373;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.work-list-table th,
+.work-list-table td {
+    padding: 12px;
+    border-bottom: 1px solid #E1E1E1;
+    white-space: nowrap;
+}

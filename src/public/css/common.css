@@ -1,0 +1,115 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #F0EFF2;
+}
+
+body,
+textarea,
+input {
+    color: #000;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #000;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    height: 80px;
+    background-color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.header__heading img {
+    height: 48px;
+}
+
+.header__link {
+    display: flex;
+    gap: 16px;
+}
+
+.header__link form {
+    margin: 0;
+}
+
+.header__link input[type="submit"] {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* コンテンツ */
+.content {
+    flex-grow: 1;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content__heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+/* ボタン共通 */
+.btn {
+    display: inline-block;
+    padding: 8px 32px;
+    border: none;
+    background-color: #000;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        height: auto;
+    }
+
+    .header__link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .header__link input[type="submit"] {
+        width: 100%;
+    }
+
+    .content {
+        padding: 24px;
+    }
+
+    .content__heading {
+        font-size: 24px;
+    }
+}

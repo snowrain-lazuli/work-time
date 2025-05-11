@@ -1,0 +1,118 @@
+.attendance-detail-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.index-title {
+    margin-bottom: 16px;
+}
+
+.index-title p {
+    font-weight: bold;
+    font-size: 24px;
+    border-left: 8px solid #000;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.attendance-detail-container {
+    width: 100%;
+}
+
+.attendance-detail-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.attendance-detail-row th,
+.attendance-detail-row td {
+    padding: 12px;
+    border-bottom: 1px solid #E1E1E1;
+    text-align: left;
+    vertical-align: middle;
+    color: #000;
+}
+
+.attendance-detail-header {
+    color: #737373;
+    font-weight: normal;
+    width: 150px;
+}
+
+.attendance-detail-table input[type="text"] {
+    width: 100%;
+    padding: 4px 6px;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+}
+
+.attendance-detail-table input[type="text"]:disabled {
+    border: none;
+    background-color: transparent;
+    color: #000;
+}
+
+.attendance-detail-action {
+    text-align: right;
+    margin-top: 16px;
+}
+
+.attendance-detail-note {
+    color: #FF9494;
+    font-weight: bold;
+}
+
+.edit-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.error-summary {
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #fff5f5;
+    border: 1px solid #ffcccc;
+    border-radius: 6px;
+}
+
+.error-message {
+    color: #cc0000;
+    margin-bottom: 0.3em;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .attendance-detail-wrapper {
+        padding: 8px;
+    }
+
+    .index-title p {
+        font-size: 20px;
+    }
+
+    .attendance-detail-header {
+        width: auto;
+    }
+
+    .attendance-detail-table input[type="text"] {
+        font-size: 14px;
+    }
+
+    .edit-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,130 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.application-container {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.application-wrapper {
+    width: 100%;
+    max-width: 960px;
+}
+
+.application-list-title p {
+    font-weight: bold;
+    font-size: 24px;
+    border-left: 5px solid #000;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.application-status-toggle {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.status-toggle-form button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    min-width: 120px;
+}
+
+.application-status-toggle {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.application-status-toggle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #000000;
+}
+
+.application-table-wrapper {
+    overflow-x: auto;
+}
+
+.application-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    text-align: center;
+    color: #737373;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.application-table__header,
+.application-table__cell {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.application-table tr:last-child td {
+    border-bottom: none;
+}
+
+.application-table__cell form button {
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.application-table__cell button {
+    font-weight: bold;
+    color: #000;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .application-status-toggle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .status-toggle-form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .application-table {
+        font-size: 12px;
+    }
+
+    .application-table__header,
+    .application-table__cell {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .application-list-title p {
+        font-size: 18px;
+    }
+
+    .application-table__header,
+    .application-table__cell {
+        padding: 6px;
+    }
+}
