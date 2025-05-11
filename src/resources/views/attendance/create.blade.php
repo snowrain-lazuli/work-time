@@ -37,7 +37,7 @@
         <span class="attendance-panel__status-label">
             @switch($status)
             @case('working') 勤務中 @break
-            @case('resting') 休憩中 @break
+            @case('breaking') 休憩中 @break
             @case('completed') 退勤済み @break
             @default 勤務外
             @endswitch
